@@ -3,11 +3,11 @@
 <body style="background-color: black;">
 
     <div id="mazeHolder" style="position: absolute; width:50px; top: 0; left: 0;"></div>
-    <img id="player" style="position: absolute; width: 50px; top: 50px; left: 0;
+    <img id="ghost" style="position: absolute; width: 50px; top: 50px; left: 0;
     -webkit-transition: all 0.2s;" src="ghost.png">
 
     <button style='position:absolute; top:630px' onclick='px++;
-    setLeft("player" ,px*50);'>The cheat button!</button>
+    setLeft("ghost" ,px*50);'>The cheat button!</button>
 
     <style>
         div{position:absolute; background-color:yellowgreen; width:50px;height:50px;}
@@ -73,8 +73,8 @@ function handleKeys(e){
        {py++;}
     
     // set the new position for the player
-    setLeft("player",px*50);
-    setTop("player",py*50);
+    setLeft("ghost",px*50);
+    setTop("ghost",py*50);
 
     console.log("ghost position X = " + px + " Y = " + py);
 
